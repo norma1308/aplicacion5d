@@ -1,0 +1,334 @@
+ <!doctype html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <title>Quinta Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('../app5/imagenes/domingo.png','imagenes/imagen7.jpg','imagenes/imagen11.jpg','imagenes/22.jpg','imagenes/imagen24.jpg','imagenes/diatierra.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>DIA DE LA TIERRA</h1>
+  </div>
+   <div align="center">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/diatierra.jpg',1)"><img src="imagenes/tierra.png" width="300" height="280" id="Image25"></a> </div>
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-c">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿QUE ES EL DIA DE LA TIERRA?</h2>
+   
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>FECHA EN QUE SE CELEBRA</h2>
+     
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>¿COMO SE CELEBRA?</h2>
+
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CUIDADOS DEL MEDIO AMBIENTE </h2>
+
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>PROBLEMATICA EN MI COMUNIDAD</h2>
+      
+      </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+    <h4>APP5</h4>
+<h4>ORTEGA FLORES NOR EDITH</h4>
+ 
+   </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿QUE ES EL DIA DE LA TIERRA?</h1>
+  </div>
+ <div data-role="content">
+  <div>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('planeta','','../app5/imagenes/imagen2.jpg',1)"><CENTER><img src="imagenes/tierra1.jpg" width="250" height="100" id="planeta"></CENTER></a><br>
+    <p> Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.
+     <br>
+     <br>
+<CENTER> <img src="imagenes/planetatierra.jpg" width="150" height="200"></CENTER><br>
+               
+    <p> Este año, el Día de la Madre Tierra coincide con la ceremonia de firma del Acuerdo de París sobre el cambio climático, que tendrá lugar en la sede de las Naciones Unidas en Nueva York. El Acuerdo fue aprobado por los 196 Estados partes de la Convención Marco sobre el Cambio Climático en París el 12 de diciembre de 2015. En el acuerdo, todos los países se comprometieron a trabajar para limitar el aumento de la temperatura global por debajo de los 2 grados centígrados, y dados los graves riesgos, a esforzarse por lograr que sea menos de 1,5 grados centígrados. La ceremonia se lleva a cabo en el primer día que el Acuerdo estará abierto para la firma, marcando el primer paso para asegurar que el Acuerdo entre en vigor jurídico tan pronto como sea posible                                                   
+      La Asamblea General, Reconociendo que Madre Tierra es una expresión común utilizada para referirse al planeta Tierra en diversos países y regiones, lo que demuestra la interdependencia existente entre los seres humanos, las demás especies vivas y el planeta que todos habitamos y Observando que cada año se celebra el Día de la Tierra en numerosos países, decidió designar el 22 de abril como Día Internacional de la Madre Tierra en 2009, en virtud de la resolución                                              
+    </p>
+   <CENTER> <iframe width="80%" height="50%" src="https://www.youtube.com/embed/xFvRO8F-hkA" frameborder="0" allowfullscreen></iframe></CENTER>
+    </div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+ <h4>APP5</h4>
+<h4>ORTEGA FLORES NORMA EDITH</h4>
+ 
+  </div>
+</div>
+</div>
+ <br>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>FECHA EN QUE SE CELEBRAN</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p> 
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/tierra1.jpg',1)"><img src="imagenes/medioambiente1.jpg" width="300" height="150" id="Image26"></a>
+   <p>El Día de la Tierra comenzó a celebrarse en los Estados Unidos de América en 1970 y ahora se dirige hacia su 50 aniversario. El Día está organizado por la Earth Day Network Disponible en inglés, cuaya misión consiste en ampliar y diversificar el movimiento ambiental en todo el mundo y movilizarlo eficazmente para construir un medio ambiente saludable y sostenible, hacer frente al cambio climático, y proteger la Tierra para las generaciones futuras. El tema de este año tiene el objetivo de plantar 7,8 millones de árboles en los próximos cinco años. <br>
+     El 22 de abril de cada año se celebra el nacimiento del movimiento ambientalista moderno, el cual se inició en 1970 cuando 20 millones de norteamericanos tomaron las calles, los parques y los auditorios para manifestarse por un ambiente saludable y sustentable<br>
+      
+      El Día de la Tierra de 1970 logró una coincidencia política que  parecía imposible. Ese día condujo a la creación de la Agencia de Protección al Medio Ambiente de Estados Unidos y a la aprobación de leyes relacionadas con el aire limpio, el agua limpia y la conservación de especies en peligro de extinci&aocute;n. A partir de entonces, cada año en esta fecha, el mundo entero reflexiona.    
+  <p><img src="imagenes/tierra6.jpg" alt="0" width="234" height="233">  
+  <p>
+  <p>
+  <p>
+  <p>        
+  <p>  
+  <p>   
+  </div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>APP5</h4>
+<h4>ORTEGA FLORES NORMA EDITH</h4>
+ 
+  </div>
+<p>&nbsp;</p>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>¿COMO SE CELEBRA?</h1>
+ </div>
+ <div data-role="content">
+ <div>
+<p>
+ La celebración del día de la Tierra es el 22 de abril y comenzó en 1970. Hoy es un evento a nivel mundial reconocido en más de 192 países. Dedicar un día especial para contribuir con la Tierra es una manera de demostrarle lo mucho que nos interesa el futuro de nuestro planeta. Sea lo que sea que más te guste, hay una manera de participar en este día especial. Podrías plantar un árbol, preparar un platillo con vegetales de cultivo local, educar a un miembro de la familia, limpiar la basura del vecindario, instalar un alimentador para aves o ahorrar energía, en fin, las posibilidades son infinitas. Recuerda que no tienes necesariamente que esperar a que venga el día de la Tierra para mostrar tu amor por el planeta al que consideramos nuestro hogar.
+ <br>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/imagen4.jpg',1)"><img src="imagenes/diatierra1.jpg" width="245" height="208" id="Image27"></a>
+ <br>
+Aprende más sobre el medio ambiente. El día de la Tierra es un buen momento para comprometerse a aprender más sobre el medio ambiente y qué se puede hacer para protegerlo. Lee artículos para estar al día con los sucesos actuales que afectan el medio ambiente, tales como la contaminación, la falta de agua y el cambio climático. Si no, aprende sobre alguna región que nunca hayas considerado como el Ártico, los desiertos o las selvas tropicales. ¿No estás seguro por dónde empezar? <br>
+<img src="imagenes/imagen6.jpg" width="195" height="210">
+<br>
+Únete a un grupo ambientalista. Piensa qué problemas te atañen más y si todavía no lo has hecho, únete a un grupo local dedicado a actividades para ayudar a proteger el medio ambiente en tu localidad. El día de la Tierra es un día excelente para empezar a participar. En casi todas las comunidades, encontrarás grupos locales haciendo lo siguiente:[6]
+Organizan días de limpieza de los cuerpos locales de agua y sus orillas.
+Luchan contra la contaminación del aire y del agua.
+Plantan árboles e instalan jardines comunitarios.
+Protegen hábitats en riesgo de desarrollo urbano
+¿No encuentras un grupo? Entonces crea el tuyo.
+<br>
+ <br>
+ <br>
+ <br>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>OTROS FESTEJOS</h1>
+     <div>
+     <br>
+     </div>
+     <br>
+Ve a una feria del día de la Tierra. Quizá tu escuela, tu calle o tu vecindario organicen una feria ambiental. Si tu comunidad no tiene planeada una, podrías considerar empezar una. Es el día perfecto para reunirse para una celebración divertida y educativa de la Tierra. El dinero recaudado puede destinarse a algún proyecto de restauración ambiental local o a un grupo ambientalista que todos los organizadores de la feria elijan. Lo que se ve muy a menudo en las ferias del día de la Tierra es lo siguiente:
+Demonstraciones de productos amigables con el medio ambiente
+Material gráfico sobre la Tierra para niños
+Alimentos saludables o de cultivo local
+Demostraciones de cuidado animal (incluido el rescate de la fauna)
+Juegos para niños hechos con productos reciclados
+Presentación de música y sátiras medioambientales por músicos y actores
+Puestos de reciclaje de tesoros y libros no deseados
+Presentación de problemas y mercancías realizado por organizaciones ambientalistas locales.
+<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/tierra10.jpg',1)"><img src="imagenes/tierra11.jpg" width="235" height="162" id="Image2"></a> <br>
+ <br>
+ </div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>APP5</h4>
+<h4>ORTEGA FLORES NORMA EDITH</h4>
+ 
+  </div>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+    <h1>ALGUNOS DE LOS CUIDADOS DEL MEDIO AMBIENTE</h1>
+   <div data-role="content">
+  <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/imagen7.jpg',1)"><img src="imagenes/imagen8.jpg" width="200" height="150" id="Image"></a><br>
+
+
+ <p>Proteger el planeta para las generaciones futuras no significa renunciar a nuestras vidas o abandonar las actividades diarias. Al adoptar hábitos sencillos y de sentido común, cada uno de nosotros puede ahorrar energía, disminuir la contaminación que afecta la temperatura de la Tierra, y conservar nuestros recursos naturales limitados.Desde 1970, personas en todo el mundo han unido esfuerzos en el Día de la Tierra para cuidar el medio ambiente y construir un mañana más saludable para ellos y sus familias. Nuestra participación es muy importante y debemos tomar medidas. Iluminar nuestras casas y conducir nuestros autos emite gases al aire que hacen que la Tierra se convierta en un gran invernadero y aumenten las temperaturas.Este calentamiento provoca cambios profundos y perturbadores en el planeta. Si no tomamos acciones para abatirlo, nuestros hijos y las siguientes generaciones tendrán que vivir en un lugar muy diferente al que conocemos.El reto es muy grande y puede parecer abrumador. Pero cuando muchas personas hacen pequeños esfuerzos, estos se suman para generar un cambio positivo a gran escala. Lo principal es empezar por elegir productos y servicios sustentables.
+ <p> 
+ <div data-role="collapsible" data-content-theme="false">
+       <h1> MEDIDAS PARA CUIDAR LA TIERRA</h1>
+       <p>Desconectar los aparatos electrónicos cuando no se estén usando. Por ejemplo: Computadoras, microondas, aires acondicionados, fotocopiadoras, impresoras, etc… 
+         Apagar las luces cuando se esté ausente de la oficina. Utilizar focos ahorradores de luz; éstos son más caros que los normales; pero duran hasta 8 veces más y consumen la quinta parte de la energía para dar la misma cantidad de luz que un bombillo normal.
+ Procurar utilizar pilas recargables o enchufar los aparatos a la red eléctrica. Si es inevitable el uso de pilas desechables, éstas no deben estar revueltas entre la basura. En lugar de ello, sepárelas y colóquelas en un recipiente aparte; ya que contienen sustancias químicas que son tóxicas. 
+Usar racionalmente el agua. Utilizar el agua caliente sólo de ser necesario. Instalar un filtro o garrafón de agua para ahorrar las botellas.
+No dejar las llaves abiertas para evitar el despilfarro, arreglar las goteras, reparar inmediatamente cualquier fuga y de ser posible reinvertir el agua para otras actividades. 
+Manejar menos y utilizar el transporte público. Otra buena opción, es caminar o usar otros medios de transporte que no contaminen. En caso de que sea imprescindible salir en el automóvil para ir al trabajo, compártelo con otros compañeros o vecinos. 
+Preguntarse si realmente se necesita un producto, antes de comprarlo. </p>
+         
+         <img src="imagenes/descarga.jpg" width="200" height="150" >
+      
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+ </div>
+ <h1>CALENTAMIENTO GLOBAL</h1>
+      <p>Este artículo versa sobre el actual calentamiento del sistema climático de la Tierra. «Cambio climático» también puede referirse a las tendencias climáticas de cualquier momento de la historia geológica.Media global del cambio de temperatura superficial en 1880-2015, respecto a la media de 1951-1980. La línea negra es la media anual y la roja la media móvil de cinco años. Fuente: NASA GISS.Mapamundi mostrando las tendencias en la temperatura superficial (°C por década) entre 1950 y 2014.Emisiones de dióxido de carbono (CO2) provenientes de combustibles fósiles comparadas con los cinco de los escenarios de emisión «SRES» del IPCC. Calentamiento global y cambio climático se refieren al aumento observado en los últimos siglos de la temperatura media del sistema climático de la Tierra y sus efectos.Múltiples líneas de pruebas científicas demuestran que el sistema climático se está calentando. Aunque a menudo la prensa popular comunica el incremento de la temperatura atmosférica superficial como medición del calentamiento global, la mayor parte de la energía adicional almacenada en el sistema climático desde 1970 se ha usado en calentar los océanos. El resto ha fundido el hielo y calentado los continentes y la atmósfera.nota 1 Muchos de los cambios observados desde la década de 1950 no tienen precedentes en décadas, aun milenios. En su quinto informe (AR5) el Grupo Intergubernamental de Expertos sobre el Cambio Climático (IPCC) señala que en 2014 los científicos estaban más del 95 % seguros de que la mayor parte del calentamiento global es causada por las crecientes concentraciones de gases de efecto invernadero (GEI) y otras actividades humanas (antropogénicas).Las proyecciones de modelos climáticos resumidos en el AR5 indicaron que durante el presente siglo la temperatura superficial global subirá probablemente 0,3 a 1,7 °C para su escenario de emisiones más bajas usando mitigación estricta y 2,6 a 4,8 °C para las mayores.Estas conclusiones han sido respaldadas por las academias nacionales de ciencia de los principales países industrializados nota 2 y no son disputadas por ninguna organización científica de prestigio nacional o internacional.El cambio climático futuro y los impactos asociados serán distintos en una región a otra alrededor del globo.<img src="imagenes/calentamiento2.jpg" width="224" height="287" >
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+ </div>
+ <br>
+    <br>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>TIPOS DE CONTAMINACION</h1>
+   <p><img src="imagenes/descarga.jpg"  width="200" height="150">     </p>
+   <p>Contaminación del Agua
+     Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.
+     Contaminación del Agua
+     ¿Qué causa la contaminación del agua?
+     Los residuos industriales se vierten en estos cuerpos de agua. Esto provoca un desequilibrio químico en el agua que conduce a la muerte de los seres acuáticos.
+     Insecticidas, pesticidas y productos químicos de maduración que se utilizan en las plantas que se usan en el sistema de aguas subterráneas o arroyos cercanos.
+     Lavar la ropa cerca de lagos y ríos detergentes causa una enfermedad llamada “eutrofización”, que bloquea la luz del sol entre en el interior y reduce los valores de oxígeno en el agua, causando un ambiente inhabitable. Definición Contaminación Acustica
+     Molesto / desagradable
+     Fuerte
+     Distracción / Intrusa
+     El ruido es en realidad una palabra latina que le da el significado? Mareo?. Más comúnmente, se puede afirmar que la sensación de molestia, desagrado o molestia.No es muy fácil de definir la definición de la contaminación acústica.  Esta contaminación no es no sólo perturbar el medio ambiente sino que también produce daño a nuestra humanidad.
+     Causas de contaminación acústica y los efectos de la contaminación acústica
+     En nuestro día a día la vida de la contaminación acústica está aumentando rápidamente y se vuelve a creeer como una de las amenazas graves en algunas zonas..   
+        </p>
+        <p><img src="imagenes/agua.jpg"  width="305" height="152">     </p>
+   <p>Contaminación Lumínica
+     La luz artificial se está convirtiendo en un peligro para nuestra planeta. Esta no sólo afecta a la belleza natural, sino a seres humanos, los animales, las aves y la vegetación. Por lo tanto, el ciclo de vida de los seres vivos también está siendo afectada por la contaminación lumínica.Mucha gente no sabe acerca de la contaminación lumínica, sino que se ha extendido en casi todos los países del planeta tierra. Todo el mundo se enfrenta ahora al problema de la contaminación lumínica y mucha gente y los gobiernos son conscientes de sus efectos desastrosos.
+     ¿Qué es la contaminación lumínica?
+     De acuerdo con el Servicio de Parques Nacionales, a la luz de los Estados Unidos por encima de lo que se requiere es llamada contaminación lumínica. La Asociación Internacional Cielo Oscuro define la contaminación lumínica a los efectos nocivos de la luz artificial en la atmósfera de la Tierra y el medio ambiente.
+    </p>
+   <p><img src="imagenes/lumica.jpg"  width="305" height="152" >     </p>
+   <p>Contaminación Térmica
+     Es un hecho bien conocido que la quema de combustibles fósiles en centrales eléctricas, hornos industriales y motores de vehículos causa la contaminación del aire. Sin embargo, un menor impacto conocido asociado con estos procesos de generación de energía es la contaminación térmica. La contaminación térmica se refiere a la adición de grandes cantidades de calor residual para el medio ambiente, las causas de la contaminación térmica son casi las mismas que las que causa la contaminación del aire.
+     Las causas de la contaminación térmica
+     De vehículos de motor a la mayoría de la electricidad producida en las centrales eléctricas, la forma primaria de energía involucrada es el calor. 
+   </p>
+   <p> <img src="imagenes/termica.jpg"   width="285" height="172" ></p>
+   <p>
+     La contaminación radiactiva
+     
+     Los desechos radiactivos son residuos que contienen material radiactivo. Los desechos radiactivos son generalmente subproductos de la generación de energía nuclear y otras aplicaciones de la fisión nuclear o tecnología nuclear, como la investigación y la medicina. Los residuos radiactivos son peligrosos para la salud humana y el medio ambiente, y está regulado por las agencias gubernamentales con el fin de proteger la salud humana y el medio ambiente.La contaminación radioactiva disminuye con el tiempo, por lo que los residuos se aísla típicamente y se almacenan durante un período de tiempo hasta que ya no representa un peligro. El período de tiempo de residuos se deben almacenar depende del tipo de residuos. </p>
+   <p>. <img src="imagenes/readictiva.jpg" width="298" height="153">     </p>
+   <p>¿Qué es la contaminación del suelo?</p>
+   <p> La contaminación del suelo se refiere a la contaminación del suelo por medio de exceso de fertilizantes, productos químicos, insecticidas, herbicidas, pesticidas, etc provocan contaminación del suelo en la disminución de la calidad del suelo y es causada por la erosión del suelo, el exceso o déficit de humedad, disminución de la nutrientes para las plantas o microorganismos del suelo, y la fluctuación de la temperatura alta.La contaminación del suelo, en cierto modo, también conduce a la contaminación del aire y la contaminación del agua. La contaminación del suelo conduce naturalmente a la contaminación del aire por la liberación de estos compuestos en la atmósfera y que puedan explotar. .</p>
+   <p> <img src="imagenes/suelo.jpg" width="229" height="214">     </p>
+   <p>¿Que es la Contaminación del Aire?</p>
+   <p> El monóxido de carbono y óxido de azufre se consideran contaminantes primarios. Estos contaminantes sufren cambios químicos y causan efectos secundarios tales como smog. La contaminación del aire se define por la existencia y la integración de los compuestos tóxicos en el ambiente en concentraciones lo suficientemente altas como para causar daño a los seres humanos, los animales y el medio ambiente de la Tierra.
+     Causas
+     La quema de combustibles fósiles emite monóxido de carbono y óxido de azufre. Automóviles, autobuses, aviones y cualquier forma de gas como combustible de transporte emiten gases de monóxido de carbono a través de sistemas de escape. El dióxido de azufre se crea a través de la combustión de carbón, y está asociado con los residuos industriales. Los procesos de fabricación utilizan carbón como combustible, liberando dióxido de azufre en el aire a través de los sistemas de escape de fábrica.
+  </p>
+ <img src="imagenes/aire.jpg" width="188" height="214">
+   </p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+ </div>
+<br>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+ <h4>APP5</h4>
+<h4>ORTEGA FLORES NOR EDITH</h4>
+ 
+</div>
+ </div>
+</div>
+ </div>
+ 
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>PROBLEMATICA EN MI COMUNIDAD</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:110px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+</div>
+ <div>
+ <p>
+ En mi comunidad no hay muchos problemas porque no hay quema de llantas y la basura la mayoria de las personas la juntamos,si hay basura pero es una cantidad minima porque hay personas que trabajan en eso de barrer y mantener limpias las calles para que no se vea mal,asi tambien todos los desechos de los animales lo juntan y mantienen mas o menos limpio para que tambien no haya una enfermedad para los animales. 
+ <br>
+ <br>
+  
+<br>
+<br>
+Aunque en el camino para ir a mi comunidad tambien no hay mucha basura pero hay gente que cuando va en la carretera en sus coches tiran basura a los terrenos.
+ <p>     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image78','','imagenes/comunidad.jpg',1)"><img src="imagenes/comunidad1.jpg" width="200" height="150" id="Image78"></a>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="b" data-position="fixed">
+ <h4>APP5</h4>
+<h4>ORTEGA FLORES NOR EDITH</h4>
+ 
+ </div>
+ </div> 
+ </div>
+ </body>
+ </html>
